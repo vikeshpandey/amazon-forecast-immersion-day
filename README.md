@@ -9,19 +9,19 @@ In the Notebooks you will learn to:
 1. Prepare a dataset for use with Amazon Forecast.
 1. Build models based on that dataset.
 1. Evaluate a model's performance based on real observations.
-1. How to evaluate the value of a Forecast compared to another.
+1. How to evaluate the value of a Forecast.
 
 ## Agenda
 
 The steps below outline the process of building your own time-series prediction models, evaluating them, and then cleaning up all of yuour resources to prevent any unwanted charges. To get started execute the following steps.
 
 1. Deploy the CloudFormation Template below or build a local Jupyter environment with the AWS CLI installed and configured for your IAM account.
-1. [1.Getting_Data_Ready.ipynb](notebooks/basic/Tutorial/1.Getting_Data_Ready.ipynb) - Guides you through preparing your dataset to be used with Amazon Forecast.
-1. [2.Building_Your_Predictor.ipynb](notebooks/basic/Tutorial/2.Building_Your_Predictor.ipynb) - Explains how to use the dataset you prepared to build your first model.
-1. [3.Evaluating_Your_Predictor.ipynb](notebooks/basic/Tutorial/3.Evaluating_Your_Predictor.ipynb) - Takes the model you just created and evaluates its performance against real observed measurements.
-1. [4.Cleanup.ipynb](notebooks/basic/Tutorial/4.Cleanup.ipynb) - Deletes Amazon Forecast resources and IAM role created in above notebooks.
+2. Guides you through preparing your dataset to be used with Amazon Forecast.
+4. Explains how to use the dataset you prepared to build your first model.
+5. Takes the model you just created and evaluates its performance against real observed measurements.
+6. Deletes Amazon Forecast resources and IAM role created in above notebooks.
 
-Each notebook can be found within the `notebooks` folder in this project.
+Notebook can be found within the `notebooks` folder in this project.
 
 ## Prerequisites 
 
@@ -32,7 +32,7 @@ Each notebook can be found within the `notebooks` folder in this project.
 ## Outline
 
 1. First you will deploy a CloudFormation template that will create an S3 bucket for data storage, a SageMaker Notebook Instance where the exercises are executed, IAM policies for the Notebook Instance, and it will clone this repository into the Notebook Instance so you are ready to get started.
-1. Next you will open the `Getting_Data_Ready.ipynb` to get started.
+1. Next you will open the `forecast-workshop.ipynb` to get started.
 1. This notebook will guide you through the process of the other notebooks until you have a working and evaluated forecast.
 
 
@@ -74,11 +74,4 @@ Once it has completed you'll see green text like below indicating that the work 
 Now that you have your environment created, you need to save the name of your S3 bucket for future use, you can find it by clicking on the `Outputs` tab and then looking for the resource `S3Bucket`, once you find it copy and paste it to a text file for the time being.
 
 ![StackWizard5](doc/images/img8.png)
-
-
-## FAQ
-
-**Q. How do I contribute my own example notebook?**
-
-A. Although we're extremely excited to receive contributions from the community, we're still working on the best mechanism to take in examples from external sources. Please bear with us in the short-term if pull requests take longer than expected or are closed.
  
