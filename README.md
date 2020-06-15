@@ -15,15 +15,6 @@ In the [*notebooks*](notebooks/) folder you will learn to:
 3. Evaluate a model's performance based on real observations.
 4. How to evaluate the value of a Forecast compared to another.
 
-## MLOps with AWS Step Functions
-
-This is a place where you will find various examples covering Machine Learning Operations best practices.
-
-To get started navigate to the [ml_ops](ml_ops/) folder and follow the README instructions.
-
-In the [*ml_ops*](ml_ops) folder you will learn how to:
-
-1. Deploy an automated end to end pipeline from training to visualization of your Amazon Forecasts in Amazon QuickSight
 
 ## License Summary
 
